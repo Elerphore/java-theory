@@ -10,14 +10,14 @@
 	* It can affects startup time of application, even if in the end result is a very good perfimance optimization.
 	* Optimizations list:
 
-		|                |                               															  |
-		|----------------|--------------------------------------------------------------------------------------------|
-		|Dead Code		 		|`Removing code which is not used`													  |	
-		|Escape analysis 		|`Moving objects created in methods and never returned, to stack instead of the heap` |
-		|Loops           		|`Combining loops, unrolling loops, loop inversion etc`								  |
-		|Method inlining 		|`Moving bodies of small methods withing the calling methods`						  |
-		|Lock removal    		|`Of only 1 thread every uses the lock, remove it`									  |
-		|Null check elimination |`If variable is nevel null, remove the null check code`							  |
+		|                       |                               													 |
+		|-----------------------|------------------------------------------------------------------------------------|
+		|Dead Code		 		|`Removing code which is not used`													 |	
+		|Escape analysis 		|`Moving objects created in methods and never returned, to stack instead of the heap`|
+		|Loops           		|`Combining loops, unrolling loops, loop inversion etc`								 |
+		|Method inlining 		|`Moving bodies of small methods withing the calling methods`						 |
+		|Lock removal    		|`Of only 1 thread every uses the lock, remove it`									 |
+		|Null check elimination |`If variable is nevel null, remove the null check code`							 |
 
 	* #### Links:	
 		* https://www.youtube.com/watch?v=sJVenujWGjs
@@ -41,11 +41,13 @@
 			An Application ClassLoader. It loads the application type classes found in the environment variable CLASSPATH, -classpath or cp. The Application ClassLoader is a child class of Extension ClassLoader.
 
 	* ClassLoader hierarcy
-
-		- Application ClassLoader -> Extension ClassLoader -> Bootstrap Class loader.
-		- The Bootstrap ClassLoader is always given the higher priority, next is Extension and the Application ClassLooaders.
+		* Application ClassLoader -> Extension ClassLoader -> Bootstrap Class loader.
+		* The Bootstrap ClassLoader is always given the higher priority, next is Extension and the Application ClassLooaders.
+	* The very first class in the application is loaded by using the static main method. From that all the others classes will be loaded as required by this particular class.
+	* #### Links:	
+		* https://www.youtube.com/watch?v=S7whKuAvRBU
+		* https://www.geeksforgeeks.org/classloader-in-java/
 		
-
 * ###  What are the memory allocations available in Java?
 * ###  Will the program run if I write static public void main?
 * ###  What is the default value stored in local variables?
