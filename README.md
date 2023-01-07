@@ -3,40 +3,65 @@
 
 ## JUNIOR
 
-	1)   What is JIT?
+* ### 1   What is JIT?
 
-		- Compiles bytecodes to machine code at run time.
-		- Just in time compiler. Part of the JRE, that is responsible for perfomance optimization of java based applications at run time.
-		- The JIT compiler aids in improving the perfomance of Java programs by compiling bytecode into native machine code at run time.
-		- It can affects startup time of application, even if in the end result is a very good perfimance optimization.
-		- Optimizations list:
+	* 1.1 Compiles bytecodes to machine code at run time.
+	* 1.2 Just in time compiler. Part of the JRE, that is responsible for perfomance optimization of java based applications at run time.
+	* 1.3 The JIT compiler aids in improving the perfomance of Java programs by compiling bytecode into native machine code at run time.
+	* 1.4 It can affects startup time of application, even if in the end result is a very good perfimance optimization.
+	* 1.5 Optimizations list:
 
-		![Images](https://i.imgur.com/zAQzvs2.png)
+		|                |                               |
+		|----------------|-------------------------------|
+		|Dead Code		 |`Removing code which is not used`|
+		|Escape analysis |`Moving objects created in methods and never returned, to stack instead of the heap` |
+		|Loops          |`Combining loops, unrolling loops, loop inversion etc`		|
+		|Method inlining          |`Moving bodies of small methods withing the calling methods`		|
+		|Lock removal          |`Of only 1 thread every uses the lock, remove it`		|
+		|Null check elimination          |`If variable is nevel null, remove the null check ode`		|
 
-		Links:
-		
-		- https://www.youtube.com/watch?v=sJVenujWGjs
-		- https://www.geeksforgeeks.org/just-in-time-compiler/
+	* #### Links:	
+	* 1.1 https://www.youtube.com/watch?v=sJVenujWGjs
+	* 1.1 https://www.geeksforgeeks.org/just-in-time-compiler/
 
-	2)   What is a ClassLoader?
-	3)   What are the memory allocations available in Java?
-	4)   Will the program run if I write static public void main?
-	5)   What is the default value stored in local variables?
-	6)   What is the output of the following code segment?
-	7)   What is an Association?
-	8)   Define copy constructor in Java
-	9)   What is a Marker Interface?
-	10)  What is object cloning?
-	11)  Why is Java not completely object-oriented?
-	12)  Define wrapper classes in Java
-	13)  Define singleton classes in Java
-	14)  Define package in Java
-	15)  Can you implement pointers in a Java program?
-	16)  Differentiate between instance and local variables
-	17)  Explain Java string pool
-	18)  What is an Exception?
-	19)  What is a final keyword in Java?
-	20)  What happens when main() isn't declared as static?
+### 2   What is a ClassLoader?
+
+### 3   What are the memory allocations available in Java?
+
+### 4   Will the program run if I write static public void main?
+
+### 5   What is the default value stored in local variables?
+
+### 6   What is the output of the following code segment?
+
+### 7   What is an Association?
+
+### 8   Define copy constructor in Java
+
+### 9   What is a Marker Interface?
+
+### 10  What is object cloning?
+
+### 11  Why is Java not completely object-oriented?
+
+### 12  Define wrapper classes in Java
+
+### 13  Define singleton classes in Java
+
+### 14  Define package in Java
+
+### 15  Can you implement pointers in a Java program?
+
+### 16  Differentiate between instance and local variables
+
+### 17  Explain Java string pool
+
+### 18  What is an Exception?
+
+### 19  What is a final keyword in Java?
+
+### 20  What happens when main() isn't declared as static?
+
 
 
 MIDDLE
